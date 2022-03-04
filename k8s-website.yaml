@@ -1,0 +1,72 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: official-website
+  name: official-website
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: official-website
+  template:
+    metadata:
+      labels:
+        app: official-website
+    spec:
+      containers:
+      - name: official-website
+        image: registry.cn-hongkong.aliyuncs.com/tatmas/official-website
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "200m"
+          limits:
+            memory: "128Mi"
+            cpu: "200m"
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: alireg
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: official-website
+  name: official-website
+spec:
+  ports:
+  - name: nginx
+    port: 80 
+    targetPort: 80
+  selector:
+    app: official-website
+---
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+  name: ingress-official-website
+spec:
+  tls:
+  - hosts:
+    - vigchain.com
+    secretName: official-website-tls
+  rules:
+  - host: vigchain.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: official-website
+          servicePort: 80
+
