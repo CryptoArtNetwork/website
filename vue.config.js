@@ -1,11 +1,11 @@
 module.exports = {
     pages: {
-        "/" : {
+        "index" : {
             entry: "src/modules/cryptoart/main.js",
             template: "public/index.html",
             filename: "index.html",
         },
-        "/chain": {
+        "chain": {
             entry: "src/modules/cloudart/main.js",
             template: "public/cloudart.html",
             filename: "cloudart.html",
