@@ -69,8 +69,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <span>苏ICP备2022012299号-1</span
-                >
+                <a href="https://beian.miit.gov.cn" target="_blank">苏ICP备2022012299号</a>
                 <span>南京加密艺画科技有限公司</span
                 >
             </div>
@@ -229,6 +228,14 @@
         line-height: 41px;
         > span {
             margin: 0 30px;
+        }
+        > a {
+            margin: 0 30px;
+            color: white;
+            text-decoration: none;
+        }
+        > a:hover {
+            text-decoration: underline;
         }
     }
 </style>
