@@ -69,11 +69,9 @@
                 </div>
             </div>
             <div class="copyright">
-                <span
-                    >地址： Rm 616,6F,Building B1,Huizhi science and Technology
-                    Park,Hengtai Road,Nanjing Economic and Technological
-                    Development Zone, Nanjing, Jiangsu 210000 China
-                    mainland</span
+                <span>苏ICP备2022012299号-1</span
+                >
+                <span>南京加密艺画科技有限公司</span
                 >
             </div>
         </div>
@@ -222,12 +220,15 @@
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         height: 41px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         font-size: 14px;
         font-weight: 500;
         text-align: left;
         color: #ffffff;
         line-height: 41px;
+        > span {
+            margin: 0 30px;
+        }
     }
 </style>
