@@ -28,7 +28,7 @@
                 this.$router.push("/")
             },
             changeLanguage() {
-                let curLang = this.lang == "en" ? "zh" : "en"
+                let curLang = "zh"
                 this.$store.dispatch("UpdateLanguage", curLang)
                 this.$i18n.locale = curLang
                 if (curLang == "zh") {
