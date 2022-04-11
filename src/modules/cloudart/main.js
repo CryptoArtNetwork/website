@@ -18,7 +18,6 @@ import store from "@/modules/cloudart/plugins/store"
 // import VueFullpage from 'vue-fullpage.js'
 
 // 引入国际化文件
-import enLocale from "@/modules/cloudart/locale/en.json"
 import zhLocale from "@/modules/cloudart/locale/zh-CN.json"
 
 // 引入根组件
@@ -40,7 +39,6 @@ import { getLocale } from "@/modules/cloudart/utils/tools"
 const i18n = new VueI18n({
     locale: getLocale(), // 设置默认使用语言
     messages: {
-        en: Object.assign(enLocale, {}),
         zh: Object.assign(zhLocale, {}),
     },
 })

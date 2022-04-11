@@ -1,14 +1,13 @@
 import Vue from "vue"
 import Vuex from "vuex"
 
-import { getLocale } from "@/modules/cloudart/utils/tools"
 import { setLocalStore } from "@/modules/cloudart/utils/storage"
 
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
     state: {
-        language: getLocale(),
+        language: "zh",
         isProducts: false,
         // scrollTop: 0,
     },
