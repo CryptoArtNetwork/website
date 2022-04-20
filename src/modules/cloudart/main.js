@@ -34,10 +34,8 @@ Vue.use(VueI18n)
 // 设置为 false 以阻止 vue 在启动时生成生产提示
 Vue.config.productionTip = false
 
-import { getLocale } from "@/modules/cloudart/utils/tools"
-
 const i18n = new VueI18n({
-    locale: getLocale(), // 设置默认使用语言
+    locale: "zh", // 设置默认使用语言
     messages: {
         zh: Object.assign(zhLocale, {}),
     },

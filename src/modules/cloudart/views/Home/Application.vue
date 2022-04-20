@@ -23,6 +23,23 @@
                 v-show="isShow"
                 class="web animate__animated animate__fadeInUp animate__delay-1s"
             ></div>
+            <div class="app-info jx">
+                <img class="app-logo" src="@/modules/cloudart/assets/images/jiuxing-logo.png" alt="" />
+                <div class="app-name">
+                    <div class="name">久星数藏</div>
+                    <img src="@/modules/cloudart/assets/images/jiuxing-logo2.png" style="width: 180px;height: 80px;margin-top: 4px;margin-bottom: 4px;" alt="" />
+                    <div class="app-decs">
+                        国风文化数字藏品推广和收藏
+                    </div>
+                </div>
+                <a
+                    style="color: black;"
+                    href="https://hzqiaoke.cn/download"
+                    target="_blank"
+                    class="download"
+                    >下载</a
+                >
+            </div>
         </div>
     </div>
 </template>
@@ -62,7 +79,7 @@
         padding-top: 100px;
         position: relative;
         padding-bottom: 37px;
-        height: 1332px;
+        height: 1754px;
     }
     .container {
         height: 100%;
@@ -133,6 +150,9 @@
             cursor: pointer;
         }
     }
+    .app-info.jx {
+        margin-top: 160px;
+    }
     .app-info {
         width: 957px;
         height: 222px;
@@ -150,6 +170,9 @@
         justify-content: space-between;
         padding: 0 40px;
         margin-bottom: 40px;
+        .app-logo {
+            max-width: 160px;
+        }
         .app-name {
             display: flex;
             flex-direction: column;
