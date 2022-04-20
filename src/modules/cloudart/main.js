@@ -31,7 +31,6 @@ window.GLOBAL.vbus = new Vue()
 // 引入国际化
 Vue.use(VueI18n)
 
-// 设置为 false 以阻止 vue 在启动时生成生产提示
 Vue.config.productionTip = false
 
 const i18n = new VueI18n({
