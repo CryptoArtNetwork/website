@@ -5,12 +5,12 @@
 </template>
 
 <script>
-    import Development from "@/modules/cryptoart/components/Development"
+    // import Development from "@/modules/cryptoart/components/Development"
     import Background from "@/modules/cryptoart/components/Background"
     export default {
         name: "App",
         components: {
-            Development,
+            // Development,
             Background
         },
         data() {
