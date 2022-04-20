@@ -17,7 +17,7 @@
                     <div class="link">
                         <a href="https://t.me/uniarts" target="_blank"><i class="link-icon"></i></a>
                         <a href="mailto:support@vigchain.com" target="_blank"><i class="link-icon"></i></a>
-                        <a href="https://github.com/uni-arts-chain" target="_blank"><i class="link-icon"></i></a>
+                        <a href="https://github.com/CryptoArtNetwork" target="_blank"><i class="link-icon"></i></a>
                     </div>
                 </div>
                 <div style="width: 75%" class="el-col info-item ul">
@@ -53,7 +53,7 @@
                         <span class="title">产品展示</span>
                         <ul>
                             <li>
-                                <a href="https://uniarts.network/" target="_blank"
+                                <a href="/chain" target="_blank"
                                     >云画链</a
                                 >
                             </li>
